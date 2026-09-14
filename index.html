@@ -19,7 +19,7 @@
         header {
             background: linear-gradient(135deg, #0f172a, #1e293b);
             color: #ffffff;
-            padding: 80px 20px;
+            padding: 70px 20px 80px;
             text-align: center;
         }
         header h1 {
@@ -36,8 +36,22 @@
         }
         .container {
             max-width: 900px;
-            margin: 40px auto;
+            margin: 0 auto 40px;
             padding: 0 20px;
+        }
+        .profile-pic-container {
+            text-align: center;
+            margin-top: -65px;
+            margin-bottom: 25px;
+        }
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            background-color: #ffffff;
         }
         .card {
             background: #ffffff;
@@ -123,6 +137,11 @@
     </header>
 
     <div class="container">
+        <!-- Profile Picture Section -->
+        <div class="profile-pic-container">
+            <img src="profile.jpg" alt="Sharifuddin Abbasi" class="profile-pic">
+        </div>
+
         <!-- About Section -->
         <div class="card">
             <h2>About</h2>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharifuddin Abbasi | Software Solutions & Web Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.7;
+        }
+        header {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #ffffff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: #ffffff;
+            padding: 35px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+        .card h2 {
+            color: #0f172a;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .service-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .service-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+        }
+        .service-box h3 {
+            color: #0f172a;
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+        }
+        .service-box p {
+            font-size: 0.95rem;
+            color: #64748b;
+        }
+        .contact-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .contact-links a {
+            display: inline-block;
+            background: #0f172a;
+            color: #ffffff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+        .contact-links a:hover {
+            background: #334155;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sharifuddin Abbasi</h1>
+        <p>Custom Software Solutions & Web Development Services</p>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <div class="card">
+            <h2>About</h2>
+            <p>
+                Welcome to my official portfolio. I provide robust, secure, and user-friendly digital systems designed to streamline daily business, retail, and educational operations. Explore my specialized software and web solutions below.
+            </p>
+        </div>
+
+        <!-- Services Section -->
+        <div class="card">
+            <h2>Featured Solutions & Offers</h2>
+            <div class="services-grid">
+                <div class="service-box">
+                    <h3>School Management System</h3>
+                    <p>Comprehensive software and web portal for student admissions, fee tracking, attendance, exams, and teacher administration.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Store & POS Software</h3>
+                    <p>Reliable point-of-sale and web solutions for retail stores, inventory tracking, sales reporting, and billing management.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Data Management System</h3>
+                    <p>Custom software and web platforms built for structured record keeping, secure data handling, and automated reporting.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="card">
+            <h2>Contact & Orders</h2>
+            <p>Ready to deploy a management system for your business or school? Reach out directly:</p>
+            <div class="contact-links">
+                <a href="mailto:sharifuddinabbasi@gmail.com">Email: sharifuddinabbasi@gmail.com</a>
+                <a href="https://wa.me/" target="_blank">Chat on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 sharifuddin.com | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sharifuddin Abbasi | Software Solutions & Official Apps Directory</title>
-    <meta name="description" content="Official portfolio of Sharifuddin Abbasi offering custom software solutions, web development, and a verified directory of Windows software and Android APKs.">
+    <meta name="description" content="Official portfolio of Sharifuddin Abbasi offering custom software solutions, web development, and an authentic verified directory of Windows software and Android APKs.">
     <meta name="keywords" content="Sharifuddin Abbasi, software solutions, school management system, POS software, download windows software, android apk download">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://sharifuddin.com/">
@@ -48,7 +48,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
         body {
             background-color: #0b1120;
@@ -175,7 +175,7 @@
             background: #059669;
         }
 
-        /* Directory Section (Dosri File Ka Design) */
+        /* Directory Section */
         .directory-header {
             text-align: center;
             margin: 50px auto 20px;
@@ -253,14 +253,14 @@
             margin: 15px auto 30px;
             padding: 0 20px;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 18px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
         }
         .dir-card {
             background-color: #111827;
             border: 1px solid #1f2937;
             border-radius: 10px;
-            padding: 18px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -274,7 +274,7 @@
         .badge-container {
             display: flex;
             gap: 6px;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
         .badge {
             display: inline-block;
@@ -289,15 +289,32 @@
         .badge-cat { background-color: rgba(168, 85, 247, 0.15); color: #c084fc; }
 
         .dir-card h3 {
-            font-size: 1.1rem;
-            margin-bottom: 6px;
+            font-size: 1.15rem;
+            margin-bottom: 8px;
             color: #f3f4f6;
         }
         .dir-card p {
-            color: #9ca3af;
-            font-size: 13px;
-            line-height: 1.4;
-            margin-bottom: 14px;
+            color: #94a3b8;
+            font-size: 13.5px;
+            line-height: 1.55;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        .read-more-btn {
+            color: #38bdf8;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: underline;
+            margin-left: 4px;
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: 13.5px;
+            display: inline;
+        }
+        .read-more-btn:hover {
+            color: #7dd3fc;
         }
 
         .download-btn {
@@ -314,6 +331,99 @@
         }
         .download-btn:hover {
             background-color: #0369a1;
+        }
+
+        /* Full Page Detail View Styles */
+        #detailPageView {
+            display: none;
+            max-width: 950px;
+            margin: 40px auto 60px;
+            padding: 0 20px;
+        }
+        .back-nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #1e293b;
+            color: #38bdf8;
+            border: 1px solid #334155;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .back-nav-btn:hover {
+            background: #0284c7;
+            color: #ffffff;
+            border-color: #0284c7;
+        }
+        .detail-card {
+            background: #111827;
+            border: 1px solid #1f2937;
+            border-radius: 14px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .detail-header-flex {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            border-bottom: 1px solid #1f2937;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+        .soft-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 16px;
+            object-fit: cover;
+            border: 2px solid #334155;
+            background-color: #0f172a;
+            padding: 10px;
+        }
+        .detail-titles h2 {
+            font-size: 2.2rem;
+            color: #f8fafc;
+            margin-bottom: 6px;
+        }
+        .detail-content {
+            color: #cbd5e1;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+        .detail-content h4 {
+            color: #38bdf8;
+            font-size: 1.15rem;
+            margin: 22px 0 10px;
+        }
+        .detail-content ul {
+            padding-left: 24px;
+            margin-bottom: 18px;
+        }
+        .detail-content li {
+            margin-bottom: 6px;
+        }
+        .detail-actions-box {
+            margin-top: 35px;
+            padding-top: 25px;
+            border-top: 1px solid #1f2937;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .detail-actions-box .download-btn {
+            display: inline-block;
+            padding: 13px 32px;
+            font-size: 15px;
+            border-radius: 8px;
+        }
+        .detail-actions-box .back-nav-btn {
+            padding: 13px 26px;
+            font-size: 15px;
         }
 
         /* Pagination */
@@ -390,90 +500,117 @@
 </head>
 <body>
 
-    <!-- پہلی فائل کا ہیڈر -->
-    <header>
-        <h1>Sharifuddin Abbasi</h1>
-        <p>Custom Software Solutions, Web Development & Official Software Directory</p>
-    </header>
+    <!-- Main Directory Wrapper -->
+    <div id="mainPageView">
+        <header>
+            <h1>Sharifuddin Abbasi</h1>
+            <p>Custom Software Solutions, Web Development & Official Verified Apps Directory</p>
+        </header>
 
-    <!-- پہلی فائل کا پورٹ فولیو سیکشن -->
-    <div class="profile-container">
-        <div class="profile-pic-container">
-            <img src="profile.jpg" alt="Sharifuddin Abbasi" class="profile-pic">
-        </div>
+        <div class="profile-container">
+            <div class="profile-pic-container">
+                <img src="profile.jpg" alt="Sharifuddin Abbasi" class="profile-pic">
+            </div>
 
-        <div class="card-main">
-            <h2>About Me</h2>
-            <p>
-                Welcome to my official portal. I specialize in building secure, reliable, and user-friendly digital systems designed to streamline daily business, retail, and educational operations. Explore my custom software solutions or browse the safe software directory below.
-            </p>
-        </div>
+            <div class="card-main">
+                <h2>About Me</h2>
+                <p>
+                    Welcome to my official portal. I specialize in building secure, reliable, and user-friendly digital systems designed to streamline daily business, retail, and educational operations. Explore my custom software solutions or browse the safe software directory below.
+                </p>
+            </div>
 
-        <div class="card-main">
-            <h2>Featured Solutions & Systems</h2>
-            <div class="services-grid">
-                <div class="service-box">
-                    <h3>School Management System</h3>
-                    <p>Comprehensive software and web portal for student admissions, fee tracking, attendance, exams, and teacher administration.</p>
+            <div class="card-main">
+                <h2>Featured Solutions & Systems</h2>
+                <div class="services-grid">
+                    <div class="service-box">
+                        <h3>School Management System</h3>
+                        <p>Comprehensive software and web portal for student admissions, fee tracking, attendance, exams, and teacher administration.</p>
+                    </div>
+                    <div class="service-box">
+                        <h3>Store & POS Software</h3>
+                        <p>Reliable point-of-sale solutions for retail stores, inventory tracking, sales reporting, and automated billing management.</p>
+                    </div>
+                    <div class="service-box">
+                        <h3>Data Management System</h3>
+                        <p>Custom software built for structured record keeping, secure data handling, and automated reporting.</p>
+                    </div>
                 </div>
-                <div class="service-box">
-                    <h3>Store & POS Software</h3>
-                    <p>Reliable point-of-sale solutions for retail stores, inventory tracking, sales reporting, and automated billing management.</p>
-                </div>
-                <div class="service-box">
-                    <h3>Data Management System</h3>
-                    <p>Custom software built for structured record keeping, secure data handling, and automated reporting.</p>
+            </div>
+
+            <div class="card-main">
+                <h2>Contact & Inquiries</h2>
+                <p>Ready to deploy a custom management system for your business or school? Get in touch directly:</p>
+                <div class="contact-links">
+                    <a href="mailto:sharifuddinabbasi@gmail.com">Email: sharifuddinabbasi@gmail.com</a>
+                    <a href="https://wa.me/923009283723" target="_blank" class="whatsapp-btn">Chat on WhatsApp</a>
                 </div>
             </div>
         </div>
 
-        <div class="card-main">
-            <h2>Contact & Inquiries</h2>
-            <p>Ready to deploy a custom management system for your business or school? Get in touch directly:</p>
-            <div class="contact-links">
-                <a href="mailto:sharifuddinabbasi@gmail.com">Email: sharifuddinabbasi@gmail.com</a>
-                <a href="https://wa.me/923009283723" target="_blank" class="whatsapp-btn">Chat on WhatsApp</a>
+        <section class="directory-header">
+            <h2>Official Software & Apps Directory</h2>
+            <p>100% Verified Official Developer Websites & Direct Download Pages</p>
+        </section>
+
+        <div class="controls">
+            <div class="filter-buttons" id="filterBtns">
+                <button class="active" onclick="setFilter('All')">All Softwares</button>
+                <button onclick="setFilter('Windows')">Windows</button>
+                <button onclick="setFilter('Android')">Android</button>
+                <button onclick="setFilter('Browser')">Browsers</button>
+                <button onclick="setFilter('Media')">Media</button>
+                <button onclick="setFilter('Utility')">Utilities</button>
+                <button onclick="setFilter('Office')">Office</button>
+                <button onclick="setFilter('Developer')">Developer</button>
+                <button onclick="setFilter('Security')">Security</button>
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" onkeyup="handleSearch()" placeholder="Search any software or app...">
+            </div>
+        </div>
+
+        <div class="counter-bar">
+            <span id="counterText">Showing 100 items on this page</span>
+            <span id="pageRange">Page 1</span>
+        </div>
+
+        <main class="directory-container" id="cardsGrid"></main>
+
+        <div class="pagination-container">
+            <button id="prevBtn" onclick="changePage(-1)">‹ Previous</button>
+            <span class="page-indicator" id="pageNumberDisplay">Page 1</span>
+            <button id="nextBtn" onclick="changePage(1)">Next ›</button>
+        </div>
+    </div>
+
+    <!-- Software Detail View Section -->
+    <div id="detailPageView">
+        <!-- Top Back Button -->
+        <button class="back-nav-btn" style="margin-bottom: 25px;" onclick="backToDirectory()">← Back to Directory</button>
+        
+        <div class="detail-card">
+            <div class="detail-header-flex">
+                <img id="detailImg" src="" alt="Software Logo" class="soft-img">
+                <div class="detail-titles">
+                    <div class="badge-container">
+                        <span class="badge" id="detailPlatform">Platform</span>
+                        <span class="badge badge-cat" id="detailCategory">Category</span>
+                    </div>
+                    <h2 id="detailTitle">Software Title</h2>
+                </div>
+            </div>
+
+            <div class="detail-content" id="detailBody"></div>
+
+            <!-- Bottom Actions: Download and Bottom Back Button -->
+            <div class="detail-actions-box">
+                <a id="detailDownloadBtn" href="#" target="_blank" rel="noopener noreferrer" class="download-btn">Go to Official Download Link ↗</a>
+                <button class="back-nav-btn" onclick="backToDirectory()">← Back to Directory</button>
             </div>
         </div>
     </div>
 
-    <!-- دوسری فائل کا مکمل ڈائریکٹری، سرچ اور فلٹرز کا سیکشن -->
-    <section class="directory-header">
-        <h2>Official Software & Apps Directory</h2>
-        <p>100% Verified Official Developer Websites & Direct Download Pages</p>
-    </section>
-
-    <div class="controls">
-        <div class="filter-buttons" id="filterBtns">
-            <button class="active" onclick="setFilter('All')">All Softwares</button>
-            <button onclick="setFilter('Windows')">Windows</button>
-            <button onclick="setFilter('Android')">Android</button>
-            <button onclick="setFilter('Browser')">Browsers</button>
-            <button onclick="setFilter('Media')">Media</button>
-            <button onclick="setFilter('Utility')">Utilities</button>
-            <button onclick="setFilter('Office')">Office</button>
-            <button onclick="setFilter('Developer')">Developer</button>
-            <button onclick="setFilter('Security')">Security</button>
-        </div>
-        <div class="search-box">
-            <input type="text" id="searchInput" onkeyup="handleSearch()" placeholder="Search any software or app...">
-        </div>
-    </div>
-
-    <div class="counter-bar">
-        <span id="counterText">Showing 100 items on this page</span>
-        <span id="pageRange">Page 1</span>
-    </div>
-
-    <main class="directory-container" id="cardsGrid"></main>
-
-    <div class="pagination-container">
-        <button id="prevBtn" onclick="changePage(-1)">‹ Previous</button>
-        <span class="page-indicator" id="pageNumberDisplay">Page 1</span>
-        <button id="nextBtn" onclick="changePage(1)">Next ›</button>
-    </div>
-
-    <!-- فوٹر اور وزٹر کاؤنٹر -->
+    <!-- Footer -->
     <footer>
         <div class="visitor-counter-box">
             <span class="label">Website Visits:</span>
@@ -482,47 +619,579 @@
         <p>© 2026 sharifuddin.com | All rights reserved.</p>
     </footer>
 
-    <!-- جاوا اسکرپٹ (دوسری فائل کا سافٹ ویئر ڈیٹا، سرچ، اور کاؤنٹر) -->
+    <!-- JavaScript Data and Core Logic -->
     <script>
         const verifiedSoftwares = [
-            { name: "Google Chrome", p: "Windows", c: "Browser", d: "The official fast and secure desktop browser developed by Google.", l: "https://www.google.com/chrome/" },
-            { name: "Mozilla Firefox", p: "Windows", c: "Browser", d: "Official free and open-source browser focused on user privacy.", l: "https://www.mozilla.org/firefox/" },
-            { name: "Brave Browser", p: "Windows", c: "Browser", d: "Official privacy-first browser blocking online trackers and ads.", l: "https://brave.com/download/" },
-            { name: "Opera GX", p: "Windows", c: "Browser", d: "Official gaming browser with CPU, RAM, and network bandwidth limiters.", l: "https://www.opera.com/gx" },
-            { name: "Microsoft Edge", p: "Windows", c: "Browser", d: "Official Windows web browser with built-in Copilot and performance modes.", l: "https://www.microsoft.com/edge" },
-            { name: "Tor Browser", p: "Windows", c: "Browser", d: "Official onion routing software for untracked and uncensored browsing.", l: "https://www.torproject.org/download/" },
-            { name: "Vivaldi", p: "Windows", c: "Browser", d: "Official power-user browser offering unmatched customization and tab management.", l: "https://vivaldi.com/download/" },
-            { name: "Chrome Mobile", p: "Android", c: "Browser", d: "Official Google Chrome mobile page on Google Play Store.", l: "https://play.google.com/store/apps/details?id=com.android.chrome" },
-            { name: "Firefox Android", p: "Android", c: "Browser", d: "Official Firefox app on Google Play with enhanced tracking protection.", l: "https://play.google.com/store/apps/details?id=org.mozilla.firefox" },
-            { name: "DuckDuckGo Browser", p: "Android", c: "Browser", d: "Official private search and browsing application on Google Play.", l: "https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android" },
-            { name: "VLC Media Player", p: "Windows", c: "Media", d: "Official VideoLAN media player playing all audio and video formats.", l: "https://www.videolan.org/vlc/" },
-            { name: "PotPlayer", p: "Windows", c: "Media", d: "Official South Korean high-performance player by Kakao Corp.", l: "https://potplayer.daum.net/" },
-            { name: "KMPlayer", p: "Windows", c: "Media", d: "Official versatile multimedia player supporting high quality 4K and 8K.", l: "https://www.kmplayer.com/" },
-            { name: "GOM Player", p: "Windows", c: "Media", d: "Official GOM Lab video player that can locate missing codecs automatically.", l: "https://www.gomlab.com/gomplayer-media-player/" },
-            { name: "AIMP Player", p: "Windows", c: "Media", d: "Official classic audio workstation and music player by Artem Izmaylov.", l: "https://www.aimp.ru/" },
-            { name: "Winamp", p: "Windows", c: "Media", d: "Official website for the iconic media player and audio jukebox.", l: "https://www.winamp.com/" },
-            { name: "MX Player", p: "Android", c: "Media", d: "Official Google Play download link for MX Player with multi-core decoding.", l: "https://play.google.com/store/apps/details?id=com.mxtech.videoplayer.ad" },
-            { name: "VLC Android", p: "Android", c: "Media", d: "Official VideoLAN Android release page on Google Play Store.", l: "https://play.google.com/store/apps/details?id=org.videolan.vlc" },
-            { name: "Spotify", p: "Android", c: "Media", d: "Official music and podcast streaming service on Google Play.", l: "https://play.google.com/store/apps/details?id=com.spotify.music" },
-            { name: "Poweramp", p: "Android", c: "Media", d: "Official advanced audio equalizer player on Google Play Store.", l: "https://play.google.com/store/apps/details?id=com.maxmpz.audioplayer" },
-            { name: "WinRAR", p: "Windows", c: "Utility", d: "Official RARLAB site to download the authentic WinRAR archiver.", l: "https://www.win-rar.com/download.html" },
-            { name: "7-Zip", p: "Windows", c: "Utility", d: "Official developer website by Igor Pavlov for the open-source 7z utility.", l: "https://www.7-zip.org/download.html" },
-            { name: "IDM", p: "Windows", c: "Utility", d: "Official Tonec Inc. portal for Internet Download Manager accelerator.", l: "https://www.internetdownloadmanager.com/download.html" },
-            { name: "Free Download Manager", p: "Windows", c: "Utility", d: "Official Free Download Manager portal for high speed file and torrent downloads.", l: "https://www.freedownloadmanager.org/download.htm" },
-            { name: "Rufus", p: "Windows", c: "Utility", d: "Official website by Pete Batard to create bootable USB drives safely.", l: "https://rufus.ie/" },
-            { name: "qBittorrent", p: "Windows", c: "Utility", d: "Official open-source torrent client portal without advertisements.", l: "https://www.qbittorrent.org/download" },
-            { name: "ZArchiver", p: "Android", c: "Utility", d: "Official ZDevs archive management tool on Google Play Store.", l: "https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver" },
-            { name: "1DM Downloader", p: "Android", c: "Utility", d: "Official Vicky Bonick multi-thread downloader on Google Play.", l: "https://play.google.com/store/apps/details?id=idm.internet.download.manager" },
-            { name: "RAR Android", p: "Android", c: "Utility", d: "Official RARLAB Android mobile release on Google Play Store.", l: "https://play.google.com/store/apps/details?id=com.rarlab.rar" },
-            { name: "SHAREit", p: "Android", c: "Utility", d: "Official Smart Media4U file transfer app on Google Play.", l: "https://play.google.com/store/apps/details?id=com.lenovo.anyshare.gps" },
-            { name: "Microsoft 365", p: "Windows", c: "Office", d: "Official Microsoft portal for Word, Excel, and PowerPoint installation.", l: "https://www.microsoft.com/microsoft-365" },
-            { name: "LibreOffice", p: "Windows", c: "Office", d: "Official Document Foundation portal for free open-source office suite.", l: "https://www.libreoffice.org/download/" },
-            { name: "Adobe Acrobat Reader", p: "Windows", c: "Office", d: "Official Adobe portal to get the genuine Acrobat Reader installer.", l: "https://get.adobe.com/reader/" },
-            { name: "WPS Office", p: "Android", c: "Office", d: "Official Kingsoft WPS Office app download on Google Play Store.", l: "https://play.google.com/store/apps/details?id=cn.wps.moffice_eng" },
-            { name: "Malwarebytes", p: "Windows", c: "Security", d: "Official Malwarebytes portal for real-time malware and scam defense.", l: "https://www.malwarebytes.com/mwb-download" },
-            { name: "Avast Free Antivirus", p: "Windows", c: "Security", d: "Official Avast Software portal for free antivirus and Wi-Fi security.", l: "https://www.avast.com/free-antivirus-download" },
-            { name: "Bitdefender Free", p: "Windows", c: "Security", d: "Official Bitdefender site for high-detection virus protection engine.", l: "https://www.bitdefender.com/solutions/antivirus-free-for-windows.html" },
-            { name: "Truecaller", p: "Android", c: "Security", d: "Official Truecaller mobile spam blocker on Google Play Store.", l: "https://play.google.com/store/apps/details?id=com.truecaller" }
+            { 
+                name: "Google Chrome", 
+                p: "Windows", 
+                c: "Browser", 
+                icon: "https://www.google.com/chrome/static/images/chrome-logo.svg",
+                shortDesc: "Google Chrome is the world's most popular web browser, built for speed, simplicity, and rock-solid stability. It features intelligent tab management, automatic malware protection, and seamless integration with Google Workspace. Users can effortlessly sync bookmarks, passwords, and extensions across all desktop and mobile devices.",
+                overview: "Google Chrome is developed by Google and powers a massive portion of the world's daily web traffic with its high-performance V8 JavaScript engine.",
+                features: [
+                    "Lightning-fast page loading with dynamic hardware acceleration.",
+                    "Instant cross-device synchronization with official Google account integration.",
+                    "Built-in Google Safe Browsing to actively alert against deceptive websites and harmful files.",
+                    "Massive ecosystem of extensions and themes on the Chrome Web Store."
+                ],
+                l: "https://www.google.com/chrome/" 
+            },
+            { 
+                name: "Mozilla Firefox", 
+                p: "Windows", 
+                c: "Browser", 
+                icon: "https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg",
+                shortDesc: "Mozilla Firefox is an independent, open-source web browser passionately dedicated to safeguarding digital privacy. It automatically blocks thousands of third-party trackers, cryptominers, and invasive ads straight out of the box. Highly customizable, it offers unmatched interface tailoring and robust memory management.",
+                overview: "Backed by the non-profit Mozilla Foundation, Firefox ensures the internet remains an open, accessible, and tracker-free public resource.",
+                features: [
+                    "Enhanced Tracking Protection (ETP) blocking invasive trackers by default.",
+                    "Lightweight Gecko rendering engine offering lower memory consumption.",
+                    "Customizable multi-tab containers for separating personal and work identities.",
+                    "Open-source transparency with strict no-sale data policies."
+                ],
+                l: "https://www.mozilla.org/firefox/" 
+            },
+            { 
+                name: "Brave Browser", 
+                p: "Windows", 
+                c: "Browser", 
+                icon: "https://brave.com/static-assets/images/brave-logo-sans-text.svg",
+                shortDesc: "Brave Browser is a performance-focused, privacy-first desktop browser that automatically stops unwanted online ads and website trackers. By cutting down bandwidth-heavy advertising scripts, it loads complex news and shopping pages up to three times faster. It also conserves laptop battery life and system RAM significantly.",
+                overview: "Brave is engineered on the Chromium platform, combining complete Chrome web store extension compatibility with native, uncompromised ad and tracker blocking.",
+                features: [
+                    "Brave Shields which aggressively blocks pop-ups, scripts, and fingerprinting trackers.",
+                    "Built-in Private Window with Tor connectivity for enhanced identity anonymity.",
+                    "Integrated privacy-focused search engine that never logs user search intent.",
+                    "Saves substantial bandwidth and enhances overall device battery life."
+                ],
+                l: "https://brave.com/download/" 
+            },
+            { 
+                name: "Opera GX", 
+                p: "Windows", 
+                c: "Browser", 
+                icon: "https://www.opera.com/gx/static/img/favicons/favicon-192x192.png",
+                shortDesc: "Opera GX is the world's first browser specifically designed for gamers, creators, and heavy system multitaskers. It comes equipped with unique hardware limiters that let you set thresholds on CPU, RAM, and network bandwidth usage. The browser also features custom neon gaming themes and built-in chat integrations.",
+                overview: "Opera GX brings gaming culture into your web workflow, letting you keep resource-heavy games running in the background without browser lag.",
+                features: [
+                    "GX Control: Customizable CPU, RAM, and Network Bandwidth limiters.",
+                    "Integrated sidebar for Discord, Twitch, WhatsApp, and Telegram.",
+                    "GX Corner with a curated gaming release calendar and free game giveaways.",
+                    "Custom sound effects, dynamic Razer Chroma RGB lighting, and modular themes."
+                ],
+                l: "https://www.opera.com/gx" 
+            },
+            { 
+                name: "Microsoft Edge", 
+                p: "Windows", 
+                c: "Browser", 
+                icon: "https://edge.microsoft.com/favicon.ico",
+                shortDesc: "Microsoft Edge is a modern, high-speed Chromium-powered browser deeply integrated into the Windows 10 and 11 ecosystems. It delivers native AI-assisted browsing through Microsoft Copilot, built-in PDF annotation tools, and sleeping tab technologies. It provides maximum battery efficiency and corporate-grade protection.",
+                overview: "Edge pairs full Chromium extension flexibility with exclusive Microsoft performance optimizations and enterprise-grade security.",
+                features: [
+                    "Built-in Copilot AI assistant for real-time webpage summarization and writing.",
+                    "Sleeping Tabs technology reducing background RAM and CPU consumption by up to 50%.",
+                    "Native SmartScreen filter detecting phishing scams and zero-day threats.",
+                    "Built-in vertical tabs, shopping coupon finder, and robust PDF editor."
+                ],
+                l: "https://www.microsoft.com/edge" 
+            },
+            { 
+                name: "Tor Browser", 
+                p: "Windows", 
+                c: "Browser", 
+                icon: "https://www.torproject.org/static/images/tor-browser-logo.png",
+                shortDesc: "Tor Browser is the world-renowned tool for anonymous internet browsing, defending against aggressive tracking and surveillance. Your web traffic is encrypted three times as it travels through thousands of volunteer-operated relay servers globally. It effectively unlocks geographically restricted content and blocks digital fingerprinting.",
+                overview: "Developed by The Tor Project, this browser isolates each website you visit so third-party trackers and ads cannot follow you across the internet.",
+                features: [
+                    "Multi-layered onion routing encrypting your digital traffic across global relays.",
+                    "Complete digital isolation: automatic cookie deletion and browsing history clearing upon exit.",
+                    "Uniform browser fingerprinting making all Tor users look completely identical.",
+                    "Bypasses severe geographical censorship and local ISP firewall blocks."
+                ],
+                l: "https://www.torproject.org/download/" 
+            },
+            { 
+                name: "Vivaldi", 
+                p: "Windows", 
+                c: "Browser", 
+                icon: "https://vivaldi.com/wp-content/themes/vivaldi_com/assets/images/press/vivaldi-icon.svg",
+                shortDesc: "Vivaldi is an ultra-customizable browser developed specifically for power users and productivity enthusiasts. It offers unrivaled features including dual-level tab stacking, split-screen viewing, native notes, and built-in screen capture. Almost every single toolbar, hotkey, and menu layout can be completely configured.",
+                overview: "Created by the co-founder of Opera, Vivaldi offers extreme adaptability without needing dozens of third-party extensions.",
+                features: [
+                    "Tab Stacking, Tab Tiling (side-by-side view), and Vertical Tab placement.",
+                    "Built-in productivity suite including Notes, Mail client, Calendar, and Feeds.",
+                    "Custom mouse gestures, command palette, and programmable keyboard shortcuts.",
+                    "Strict privacy stance: Zero user tracking or behavior analytics."
+                ],
+                l: "https://vivaldi.com/download/" 
+            },
+            { 
+                name: "Chrome Mobile", 
+                p: "Android", 
+                c: "Browser", 
+                icon: "https://www.google.com/chrome/static/images/chrome-logo.svg",
+                shortDesc: "Google Chrome for Android brings the proven speed, security, and smart features of the desktop browser directly to mobile devices. It offers instant voice search, customized news feeds, and automatic webpage translation in hundreds of languages. Its streamlined data saver mode minimizes cellular data expenditure on slow networks.",
+                overview: "The default browser standard for millions of Android devices worldwide, offering native system optimizations and fluid touch navigation.",
+                features: [
+                    "Instant synchronization of open tabs, passwords, and bookmarks with PC.",
+                    "Google Safe Browsing proactively alerting against malicious mobile downloads.",
+                    "Integrated Google Translate for instant one-tap whole-page language conversion.",
+                    "Lite Mode options for faster page rendering on limited data connections."
+                ],
+                l: "https://play.google.com/store/apps/details?id=com.android.chrome" 
+            },
+            { 
+                name: "Firefox Android", 
+                p: "Android", 
+                c: "Browser", 
+                icon: "https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg",
+                shortDesc: "Firefox Android offers users a refreshingly private mobile browsing experience completely uncoupled from big tech ad networks. Unlike most mobile browsers, it provides comprehensive support for verified privacy and ad-blocking desktop extensions. It features customizable navigation toolbars and an ultra-fast private mode.",
+                overview: "A genuinely independent mobile browser built on Mozilla's GeckoView technology, designed to protect everyday smartphone privacy.",
+                features: [
+                    "Support for powerful desktop extensions like uBlock Origin and Dark Reader.",
+                    "One-tap private browsing mode with immediate trace and history elimination.",
+                    "Customizable URL address bar placement (top or bottom) for one-handed use.",
+                    "Cross-device synchronization of tabs with Firefox desktop."
+                ],
+                l: "https://play.google.com/store/apps/details?id=org.mozilla.firefox" 
+            },
+            { 
+                name: "DuckDuckGo Browser", 
+                p: "Android", 
+                c: "Browser", 
+                icon: "https://duckduckgo.com/assets/logo_header.alt.v108.svg",
+                shortDesc: "DuckDuckGo Mobile Browser is a streamlined privacy application designed to keep your smartphone usage completely confidential. It comes equipped with the famous Fire Button, which erases all open tabs and browsing cookies in a single tap. It also features groundbreaking App Tracking Protection to block background tracking.",
+                overview: "All-in-one privacy solution packing private searching, tracker blocking, and encrypted connections into an intuitive mobile app.",
+                features: [
+                    "Iconic 'Fire Button' that instantly burns all browsing history and tabs.",
+                    "Built-in App Tracking Protection preventing other installed apps from spying on you.",
+                    "Smarter Encryption forcing websites to use encrypted HTTPS connections.",
+                    "Zero search tracking: Never saves, stores, or sells user search queries."
+                ],
+                l: "https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android" 
+            },
+            { 
+                name: "VLC Media Player", 
+                p: "Windows", 
+                c: "Media", 
+                icon: "https://images.videolan.org/images/icons-VLC/vlc.mini.svg",
+                shortDesc: "VLC Media Player is universally recognized as the gold standard of open-source multimedia players for Windows and other operating systems. It plays virtually any video and audio format including MKV, MP4, AVI, and FLAC without requiring third-party codec packs. Completely free, it is devoid of spyware, ads, and user tracking.",
+                overview: "Developed by the VideoLAN project, VLC is an essential utility for anyone wanting reliable playback of all digital media files.",
+                features: [
+                    "Plays all codecs natively without needing external codec packs installed.",
+                    "Advanced video conversion, streaming protocol reception, and audio equalization.",
+                    "Automatic subtitle synchronization and direct opensubtitles search integration.",
+                    "Hardware decoding acceleration on modern GPUs for 4K and 8K playback."
+                ],
+                l: "https://www.videolan.org/vlc/" 
+            },
+            { 
+                name: "PotPlayer", 
+                p: "Windows", 
+                c: "Media", 
+                icon: "https://potplayer.daum.net/favicon.ico",
+                shortDesc: "PotPlayer is an exceptionally powerful, highly customizable media player engineered by South Korea's Kakao Corporation for Windows. It utilizes cutting-edge hardware acceleration (CUDA, QuickSync, DXVA) to deliver silky-smooth playback of heavy 4K, 8K, and 3D videos. It offers deep granular controls for subtitles, filters, and rendering.",
+                overview: "PotPlayer is favored by videophiles for its unmatched performance, extensive audio/video filters, and broad codec support.",
+                features: [
+                    "Ultra-smooth hardware acceleration with minimal system CPU load.",
+                    "Comprehensive 3D viewing support with side-by-side and top-and-bottom modes.",
+                    "Simultaneous dual subtitle display with custom styling, fonts, and sync tools.",
+                    "Detailed playback frame bookmarking and high-resolution video capture options."
+                ],
+                l: "https://potplayer.daum.net/" 
+            },
+            { 
+                name: "KMPlayer", 
+                p: "Windows", 
+                c: "Media", 
+                icon: "https://www.kmplayer.com/favicon.ico",
+                shortDesc: "KMPlayer is a versatile multi-format desktop media player capable of rendering high-definition videos with incredible clarity. It supports modern codecs such as HEVC (H.265), VP9, and AV1, allowing lag-free playback on both old and new PCs. It provides extensive screen capture tools and audio output frequency controls.",
+                overview: "A time-tested multimedia player that handles ultra-high-definition video playback with rich audio customization options.",
+                features: [
+                    "Flawless rendering of Ultra HD, 4K, 8K, and 60FPS video files.",
+                    "Hardware acceleration optimized for lower-spec desktop hardware.",
+                    "Built-in audio visualizers, equalizers, and real-time noise reduction filters.",
+                    "Extensive multi-language subtitle parsing and synchronization tools."
+                ],
+                l: "https://www.kmplayer.com/" 
+            },
+            { 
+                name: "GOM Player", 
+                p: "Windows", 
+                c: "Media", 
+                icon: "https://www.gomlab.com/img/favicon.ico",
+                shortDesc: "GOM Player stands out from ordinary video players thanks to its intelligent built-in Missing Codec Finder service. If an unusual media file cannot play, GOM Player automatically locates and directs you to the necessary codec. It can also play partially downloaded or corrupted media files seamlessly without crashing.",
+                overview: "A convenient Windows player that eliminates video playback frustration with smart codec resolution and 360-degree VR support.",
+                features: [
+                    "Intelligent Codec Finder that locates missing video and audio codecs automatically.",
+                    "Ability to play locked, damaged, or partially downloaded AVI and MP4 files.",
+                    "Extensive online subtitle database with automatic matching and syncing.",
+                    "Immersive 360-degree VR video playback with fluid mouse navigation."
+                ],
+                l: "https://www.gomlab.com/gomplayer-media-player/" 
+            },
+            { 
+                name: "AIMP Player", 
+                p: "Windows", 
+                c: "Media", 
+                icon: "https://www.aimp.ru/favicon.ico",
+                shortDesc: "AIMP is a premium-grade audio player and sound workstation designed by Artem Izmaylov for audiophiles and music lovers. It features a crystal-clear 32-bit audio processing engine paired with an advanced 18-band graphic equalizer and built-in sound effects. It also includes comprehensive tools for audio format conversion and ID3 tag editing.",
+                overview: "A classic Winamp-inspired audio manager engineered with modern audiophile playback fidelity and ultra-lightweight system resource footprint.",
+                features: [
+                    "32-bit digital sound processing engine with built-in 18-band equalizer.",
+                    "Built-in Audio Converter to transcode FLAC, MP3, WAV, AAC, and OGG files.",
+                    "Advanced ID3 Tag Editor for organizing vast offline music collections.",
+                    "Internet radio streaming listener with direct audio stream recording capability."
+                ],
+                l: "https://www.aimp.ru/" 
+            },
+            { 
+                name: "Winamp", 
+                p: "Windows", 
+                c: "Media", 
+                icon: "https://www.winamp.com/favicon.ico",
+                shortDesc: "Winamp is an iconic digital media player that pioneered MP3 playback, personal playlists, and audio visualizations in personal computing history. The modern Windows edition revives that classic charm with support for high-bitrate modern audio formats. It allows effortless local music library organization and retro skin customization.",
+                overview: "The legendary audio jukebox returns with modern format compatibility while preserving its iconic skins, plug-ins, and visualizations.",
+                features: [
+                    "Classic modular skin architecture with support for thousands of vintage skins.",
+                    "Fast music library search, dynamic smart playlist generation, and CD ripping.",
+                    "Support for all legacy and modern digital audio formats (FLAC, MP3, M4A, WAV).",
+                    "Iconic dynamic audio visualizers including MilkDrop 2 support."
+                ],
+                l: "https://www.winamp.com/" 
+            },
+            { 
+                name: "MX Player", 
+                p: "Android", 
+                c: "Media", 
+                icon: "https://play-lh.googleusercontent.com/4qNqF94a5kY4a8Y8aF3kG_F2yU8K_fV1K=w240-h480",
+                shortDesc: "MX Player is widely celebrated as the most capable and fluid video playback application available for Android smartphones and tablets. It was the first mobile player to introduce multi-core decoding (HW/HW+), offering dramatic performance leaps over single-core players. Its intuitive touch gesture controls make screen navigation an absolute breeze.",
+                overview: "A mobile media powerhouse offering advanced hardware acceleration, subtitle gestures, and secure video vault storage.",
+                features: [
+                    "Multi-core decoding delivering up to 70% better performance on modern multi-core chips.",
+                    "Intuitive gesture controls for volume, brightness, zooming, and seeking.",
+                    "Subtitle gestures: scroll forward/backward, move up/down, and zoom in/out.",
+                    "Kids Lock feature and Private Folder for password-protected video storage."
+                ],
+                l: "https://play.google.com/store/apps/details?id=com.mxtech.videoplayer.ad" 
+            },
+            { 
+                name: "VLC Android", 
+                p: "Android", 
+                c: "Media", 
+                icon: "https://images.videolan.org/images/icons-VLC/vlc.mini.svg",
+                shortDesc: "VLC for Android is a complete, uncompromised open-source multimedia player that brings the power of desktop VLC straight to your mobile phone. It plays any video or audio file directly without demanding third-party plugins or ad subscriptions. It also features background audio playback, pop-up video windows, and network stream support.",
+                overview: "A clean, ad-free mobile player for movies, music, and streaming protocols with zero tracking or user data collection.",
+                features: [
+                    "Completely free and 100% open-source with no advertisements or in-app purchases.",
+                    "Plays all exotic media formats, ISO files, and direct network streaming URLs.",
+                    "Picture-in-Picture (PiP) pop-up player and background playback mode.",
+                    "Complete audio library browser with equalizer, playlists, and headphone control."
+                ],
+                l: "https://play.google.com/store/apps/details?id=org.videolan.vlc" 
+            },
+            { 
+                name: "Spotify", 
+                p: "Android", 
+                c: "Media", 
+                icon: "https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png",
+                shortDesc: "Spotify is the undisputed global leader in digital music streaming, offering instant access to over 100 million songs and podcasts. Its recommendation algorithms create personalized daily playlists that match your musical tastes with startling accuracy. Users can curate playlists, follow friends, and enjoy synchronized multi-device listening.",
+                overview: "The world's premier audio streaming platform providing high-fidelity music, original podcasts, and seamless cross-platform playback.",
+                features: [
+                    "Curated personalized playlists like Discover Weekly and Daily Mixes.",
+                    "Vast library of podcasts across educational, storytelling, and tech categories.",
+                    "Spotify Connect: Seamless remote playback control across PCs, smart TVs, and speakers.",
+                    "Offline download option for uninterrupted listening on long flights and travels."
+                ],
+                l: "https://play.google.com/store/apps/details?id=com.spotify.music" 
+            },
+            { 
+                name: "Poweramp", 
+                p: "Android", 
+                c: "Media", 
+                icon: "https://maxmpz.com/favicon.ico",
+                shortDesc: "Poweramp is a high-end music player for Android designed specifically for audio enthusiasts who demand studio-grade sound quality. It boasts an internal 64-bit audio processing engine, high-resolution audio output support, and a graphic 10-band equalizer. It transforms standard headphones into premium listening gear.",
+                overview: "Android's most technically advanced offline audio player, renowned for exceptional sound enhancement and skin customization.",
+                features: [
+                    "64-bit internal audio processing engine with high-res audio DAC output.",
+                    "Powerful 10 to 32-band graphic equalizer with dedicated Bass and Treble knobs.",
+                    "Gapless playback, smooth crossfade, and ReplayGain volume normalization.",
+                    "Comprehensive file tag editor and automatic high-resolution album art downloader."
+                ],
+                l: "https://play.google.com/store/apps/details?id=com.maxmpz.audioplayer" 
+            },
+            { 
+                name: "WinRAR", 
+                p: "Windows", 
+                c: "Utility", 
+                icon: "https://www.win-rar.com/fileadmin/templates/winrar/images/logo.png",
+                shortDesc: "WinRAR is the undisputed industry standard for file compression, archiving, and data packaging on the Windows operating system. It can create and unpack RAR and ZIP files, drastically reducing storage footprint and email transmission times. It features military-grade 256-bit AES encryption to lock sensitive archives.",
+                overview: "With decades of proven reliability, WinRAR remains an indispensable Windows utility for compressing and password-protecting large files.",
+                features: [
+                    "Industry-standard compression ratios for RAR, RAR5, and ZIP archives.",
+                    "Robust AES-256 bit file encryption with password protection.",
+                    "Recovery Record integration to rebuild and repair damaged archives.",
+                    "Volume splitting feature to slice huge backups into smaller CD/DVD/USB sizes."
+                ],
+                l: "https://www.win-rar.com/download.html" 
+            },
+            { 
+                name: "7-Zip", 
+                p: "Windows", 
+                c: "Utility", 
+                icon: "https://www.7-zip.org/7ziplogo.png",
+                shortDesc: "7-Zip is a completely free, open-source file archiver famous for achieving remarkably high compression ratios via its proprietary 7z format. It is lightweight, contains zero bloatware or nag screens, and integrates cleanly into the Windows Context Menu. It unpacks almost every known archive format including RAR, ISO, TAR, and GZ.",
+                overview: "Developed by Igor Pavlov, 7-Zip delivers unbeatable compression efficiency and raw performance without costing a single penny.",
+                features: [
+                    "Remarkable compression ratio in 7z format using advanced LZMA and LZMA2 compression.",
+                    "100% free and open-source under GNU LGPL license for personal and business use.",
+                    "Strong AES-256 encryption in 7z and ZIP formats for bulletproof security.",
+                    "Seamless integration with Windows Explorer context menus and command-line version."
+                ],
+                l: "https://www.7-zip.org/download.html" 
+            },
+            { 
+                name: "IDM", 
+                p: "Windows", 
+                c: "Utility", 
+                icon: "https://www.internetdownloadmanager.com/favicon.ico",
+                shortDesc: "Internet Download Manager (IDM) is the world's most popular download accelerator, boosting file transfer speeds by up to 5 times. It features an intelligent multi-part download logic that dynamically segments files during the active download process. It seamlessly grabs video and audio streams from almost any website automatically.",
+                overview: "Tonec Inc.'s flagship download tool that completely automates, schedules, and accelerates large web downloads on Windows.",
+                features: [
+                    "Dynamic file segmentation technology multiplying download speeds up to 5x.",
+                    "Comprehensive browser integration for Chrome, Firefox, Edge, and Opera.",
+                    "Flawless resume capability for interrupted downloads caused by lost connections.",
+                    "Built-in scheduler, speed limiter, and antivirus check upon completion."
+                ],
+                l: "https://www.internetdownloadmanager.com/download.html" 
+            },
+            { 
+                name: "Free Download Manager", 
+                p: "Windows", 
+                c: "Utility", 
+                icon: "https://www.freedownloadmanager.org/favicon.ico",
+                shortDesc: "Free Download Manager (FDM) is an elegant, modern, and completely free download accelerator and BitTorrent client. It breaks large files into multiple chunks to download them at the fastest speed your internet provider can sustain. It also allows users to preview audio and video files before the download finishes.",
+                overview: "A clean, modern alternative to commercial download tools, offering native BitTorrent support and cross-platform syncing.",
+                features: [
+                    "Unified manager for both standard HTTP/HTTPS direct downloads and BitTorrent files.",
+                    "Built-in media preview: check audio and video files before downloads are complete.",
+                    "Smart traffic management: adjust download speeds so web browsing stays smooth.",
+                    "Zero adware, completely modern dark-mode user interface."
+                ],
+                l: "https://www.freedownloadmanager.org/download.htm" 
+            },
+            { 
+                name: "Rufus", 
+                p: "Windows", 
+                c: "Utility", 
+                icon: "https://rufus.ie/pics/rufus-128.png",
+                shortDesc: "Rufus is a tiny, lightning-fast utility designed to format and create bootable USB flash drives from ISO disk images. It is universally trusted by IT professionals for installing clean copies of Windows and Linux distributions. It can also strip Windows 11 installation restrictions like TPM and Secure Boot requirements.",
+                overview: "Created by Pete Batard, Rufus is widely regarded as the fastest and most dependable bootable USB creation tool on the market.",
+                features: [
+                    "Significantly faster than competing tools when creating Windows or Linux bootable drives.",
+                    "Bypasses Windows 11 hardware barriers: removes TPM 2.0, Secure Boot, and 8GB RAM checks.",
+                    "Removes compulsory Microsoft online account requirements during Windows 11 setup.",
+                    "Standalone portable executable requiring zero software installation."
+                ],
+                l: "https://rufus.ie/" 
+            },
+            { 
+                name: "qBittorrent", 
+                p: "Windows", 
+                c: "Utility", 
+                icon: "https://www.qbittorrent.org/favicon.ico",
+                shortDesc: "qBittorrent is an ad-free, open-source BitTorrent client that aims to provide a reliable alternative to bloatware-ridden commercial clients. It consumes minimal CPU and memory while providing advanced features like an integrated torrent search engine. It also supports remote web-based control and sequential downloading for streaming.",
+                overview: "The gold standard of open-source peer-to-peer file sharing clients, combining immense power with a clean, classic interface.",
+                features: [
+                    "Clean, ad-free interface identical in familiarity to classic uTorrent.",
+                    "Integrated multi-source search engine allowing torrent discovery without opening a browser.",
+                    "Sequential downloading capability allowing video files to be streamed as they download.",
+                    "Granular bandwidth scheduling, IP filtering, and encrypted peer connections."
+                ],
+                l: "https://www.qbittorrent.org/download" 
+            },
+            { 
+                name: "ZArchiver", 
+                p: "Android", 
+                c: "Utility", 
+                icon: "https://play-lh.googleusercontent.com/j_6Wp8Vz8l5Q=w240-h480",
+                shortDesc: "ZArchiver is the premier archive management tool for Android devices, providing unrivaled support for compression and extraction. It can create and extract ZIP, 7Z, RAR, and TAR archives without corrupting file headers or character sets. Mobile gamers rely on it heavily for extracting OBB data caches and modded game files.",
+                overview: "A focused, reliable file compression utility for Android that handles password-protected and multi-part archives with ease.",
+                features: [
+                    "Creates and decompresses 7z, zip, rar, bzip2, gzip, and tar archives.",
+                    "Decompresses multi-part split archives (z01, part1.rar) flawlessly.",
+                    "Extracts password-protected and encrypted zip/rar files directly on your phone.",
+                    "UTF-8/UTF-16 support prevents corrupted filenames in non-English archives."
+                ],
+                l: "https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver" 
+            },
+            { 
+                name: "1DM Downloader", 
+                p: "Android", 
+                c: "Utility", 
+                icon: "https://play-lh.googleusercontent.com/fK5R4A8q=w240-h480",
+                shortDesc: "1DM (formerly IDM for Android) is the most advanced and feature-dense download manager and torrent downloader on Android. It leverages up to 32 simultaneous parts per download to maximize network throughput and download speed. It includes a smart built-in web browser that automatically captures streaming videos.",
+                overview: "A desktop-grade download accelerator designed for mobile power users, packed with media grabbers and torrent capabilities.",
+                features: [
+                    "Up to 500% faster downloads with support for up to 32 simultaneous parts.",
+                    "Integrated BitTorrent client to download torrent files directly via magnet links.",
+                    "Advanced media grabber that catches videos from streaming social platforms.",
+                    "Built-in ad blocker and private web browser for distraction-free surfing."
+                ],
+                l: "https://play.google.com/store/apps/details?id=idm.internet.download.manager" 
+            },
+            { 
+                name: "RAR Android", 
+                p: "Android", 
+                c: "Utility", 
+                icon: "https://www.win-rar.com/fileadmin/templates/winrar/images/logo.png",
+                shortDesc: "RAR for Android is the official, all-in-one original compression and extraction software brought to mobile by RARLAB. In addition to standard ZIP and RAR extraction, it can compress files natively into genuine RAR5 archives. It also includes benchmark tools, recovery volumes, and file repair mechanisms for corrupted archives.",
+                overview: "The genuine Android release from RARLAB, delivering authentic RAR compression and advanced recovery features on smartphones.",
+                features: [
+                    "Native creation of genuine RAR and ZIP files on mobile storage.",
+                    "Unpacks RAR, ZIP, TAR, GZ, BZ2, 7z, ISO, and ARJ formats.",
+                    "Recovery Record support to repair damaged archive blocks.",
+                    "Built-in speed benchmark tool to measure mobile CPU compression performance."
+                ],
+                l: "https://play.google.com/store/apps/details?id=com.rarlab.rar" 
+            },
+            { 
+                name: "SHAREit", 
+                p: "Android", 
+                c: "Utility", 
+                icon: "https://play-lh.googleusercontent.com/y3F7K8K=w240-h480",
+                shortDesc: "SHAREit revolutionized cross-device file transfers by utilizing direct Wi-Fi hotspot technology instead of slow Bluetooth connections. It transfers heavy video files, music albums, apps, and photos across phones and computers at blistering speeds. It works completely offline without burning through mobile data plans.",
+                overview: "High-speed peer-to-peer file transfer utility that connects Android, iOS, and PC devices wirelessly without internet access.",
+                features: [
+                    "Blazing transfer speeds up to 40 MB/s—over 200 times faster than Bluetooth.",
+                    "Transfers all file formats: large video clips, photos, installed apps, and documents.",
+                    "Cross-platform capability connecting Android, iOS, Windows, and Mac.",
+                    "Zero mobile data usage: transfers occur over direct local Wi-Fi connections."
+                ],
+                l: "https://play.google.com/store/apps/details?id=com.lenovo.anyshare.gps" 
+            },
+            { 
+                name: "Microsoft 365", 
+                p: "Windows", 
+                c: "Office", 
+                icon: "https://c.s-microsoft.com/favicon.ico",
+                shortDesc: "Microsoft 365 is the world's standard office productivity suite, uniting industry staples Word, Excel, PowerPoint, and Outlook. It empowers businesses, students, and professionals to author documents, calculate financial models, and present slides. Cloud synchronization via OneDrive keeps documents accessible anywhere.",
+                overview: "The premier workplace suite integrating classic desktop productivity applications with real-time cloud collaboration.",
+                features: [
+                    "Microsoft Word for professional document drafting, formatting, and PDF editing.",
+                    "Microsoft Excel with advanced formulas, Pivot Tables, and automated analytics.",
+                    "PowerPoint for crafting engaging, multimedia-rich presentation decks.",
+                    "Seamless OneDrive cloud backup and real-time team document co-authoring."
+                ],
+                l: "https://www.microsoft.com/microsoft-365" 
+            },
+            { 
+                name: "LibreOffice", 
+                p: "Windows", 
+                c: "Office", 
+                icon: "https://www.libreoffice.org/favicon.ico",
+                shortDesc: "LibreOffice is a comprehensive, open-source office suite developed by The Document Foundation as a free alternative to Microsoft Office. It packages full-featured word processing (Writer), spreadsheets (Calc), presentations (Impress), and vector diagrams (Draw). It boasts native support for standard OpenDocument and DOCX formats.",
+                overview: "A completely free, community-governed office suite that liberates users from proprietary software licensing and subscription fees.",
+                features: [
+                    "Completely free to use for personal, educational, and commercial enterprises.",
+                    "Full compatibility with Microsoft Office file formats (.docx, .xlsx, .pptx).",
+                    "Includes Writer, Calc, Impress, Draw, Math formula editor, and Base database.",
+                    "Regularly updated with modern security patches and zero advertising."
+                ],
+                l: "https://www.libreoffice.org/download/" 
+            },
+            { 
+                name: "Adobe Acrobat Reader", 
+                p: "Windows", 
+                c: "Office", 
+                icon: "https://www.adobe.com/favicon.ico",
+                shortDesc: "Adobe Acrobat Reader is the global benchmark for opening, viewing, printing, and digitally signing PDF documents securely. It faithfully displays complex PDF forms, academic research papers, and technical blueprints without distorting typography. Users can highlight passages, insert sticky notes, and apply legally binding signatures.",
+                overview: "The original and most reliable PDF reading software, maintaining pristine visual formatting across all digital documents.",
+                features: [
+                    "Flawless rendering of complex PDFs with interactive forms, tables, and media.",
+                    "Intuitive annotation tools: sticky notes, text highlighting, strikethrough, and stamps.",
+                    "Fill & Sign tools for quickly completing forms and applying digital signatures.",
+                    "Protected Mode security sandboxing against malicious PDF code execution."
+                ],
+                l: "https://get.adobe.com/reader/" 
+            },
+            { 
+                name: "WPS Office", 
+                p: "Android", 
+                c: "Office", 
+                icon: "https://play-lh.googleusercontent.com/yK5W8N=w240-h480",
+                shortDesc: "WPS Office for Android is a compact, all-in-one mobile office suite that combines Word, Spreadsheet, Presentation, and PDF reader. It enables busy professionals and students to review reports, edit spreadsheets, and prepare presentations on the go. It also features a camera scanner to convert paper documents into PDFs.",
+                overview: "A lightweight mobile office powerhouse delivering seamless document editing, PDF conversion, and mobile print capabilities.",
+                features: [
+                    "All-in-one office app combining Writer, Spreadsheet, Presentation, and PDF.",
+                    "Full compatibility with Microsoft Word, Excel, and PowerPoint documents.",
+                    "Camera Document Scanner to turn paper receipts and notes into clean PDFs.",
+                    "Mobile reading view that reformats text for comfortable reading on small screens."
+                ],
+                l: "https://play.google.com/store/apps/details?id=cn.wps.moffice_eng" 
+            },
+            { 
+                name: "Malwarebytes", 
+                p: "Windows", 
+                c: "Security", 
+                icon: "https://www.malwarebytes.com/favicon.ico",
+                shortDesc: "Malwarebytes is an industry-leading cybersecurity application designed to hunt down and eliminate complex malware threats that traditional antiviruses miss. Its multi-layered scanner actively neutralizes ransomware, rootkits, spyware, and deceptive adware. It also blocks malicious phishing URLs and browser hijackers.",
+                overview: "A premier malware eradication solution engineered to destroy stubborn infections and safeguard computers from zero-day threats.",
+                features: [
+                    "Advanced heuristic detection identifying zero-day malware before signatures exist.",
+                    "Anti-Ransomware shield preventing hostile encryption of your valuable files.",
+                    "Removes stubborn adware, unwanted toolbars, and browser hijackers.",
+                    "Complements existing Windows Defender without triggering software conflicts."
+                ],
+                l: "https://www.malwarebytes.com/mwb-download" 
+            },
+            { 
+                name: "Avast Free Antivirus", 
+                p: "Windows", 
+                c: "Security", 
+                icon: "https://www.avast.com/favicon.ico",
+                shortDesc: "Avast Free Antivirus is one of the most widely deployed security tools on Windows, offering complete protection against malware and viruses. It includes a Home Network Inspector that scans your Wi-Fi router for configuration weaknesses and unauthorized devices. Its silent Do Not Disturb mode ensures gaming sessions stay interruption-free.",
+                overview: "A reliable, feature-packed free security tool protecting hundreds of millions of users across the globe in real time.",
+                features: [
+                    "Real-time Cloud Scanning detecting viruses, trojans, and ransomware.",
+                    "Wi-Fi Inspector checking home routers for vulnerabilities and intruding devices.",
+                    "Web Shield blocking phishing attempts and unverified file downloads.",
+                    "Do Not Disturb mode silencing system notifications during gaming or video viewing."
+                ],
+                l: "https://www.avast.com/free-antivirus-download" 
+            },
+            { 
+                name: "Bitdefender Free", 
+                p: "Windows", 
+                c: "Security", 
+                icon: "https://www.bitdefender.com/favicon.ico",
+                shortDesc: "Bitdefender Antivirus Free is a streamlined, whisper-quiet security utility renowned for its peerless malware detection engine. It operates with minimal system footprint, quietly scanning files in the background without causing gaming lag or slowing file transfers. It uses advanced behavioral analysis to halt suspicious threats.",
+                overview: "High-detection virus protection stripped of complex clutter, delivering automatic background defense without system slowdowns.",
+                features: [
+                    "Consistently top-rated malware detection score in independent AV-Test lab trials.",
+                    "Behavioral monitoring engine actively halting suspicious active processes.",
+                    "Anti-phishing and anti-fraud filters shielding your banking and login credentials.",
+                    "Near-zero CPU and RAM overhead, ensuring optimal gaming and multitasking speed."
+                ],
+                l: "https://www.bitdefender.com/solutions/antivirus-free-for-windows.html" 
+            },
+            { 
+                name: "Truecaller", 
+                p: "Android", 
+                c: "Security", 
+                icon: "https://www.truecaller.com/favicon.ico",
+                shortDesc: "Truecaller is the world's premier caller identification and spam defense application, protecting users from fraudulent calls and robocalls. Powered by a vast community database, it displays the caller's identity even if the number is not saved in your phonebook. It automatically filters out telemarketing messages.",
+                overview: "Essential smartphone utility ensuring telephone peace of mind by identifying unknown callers and auto-blocking spam.",
+                features: [
+                    "Instant Caller ID displaying names and origins of unknown incoming calls.",
+                    "Community-driven auto-blocking for known fraud, spam, and telemarketer numbers.",
+                    "Smart SMS inbox organizing banking alerts, transactional receipts, and spam.",
+                    "Integrated secure backup for contacts, call history, and message archives."
+                ],
+                l: "https://play.google.com/store/apps/details?id=com.truecaller" 
+            }
         ];
 
         let currentPage = 1;
@@ -560,7 +1229,10 @@
                     name: title,
                     platform: currentPlatform,
                     category: currentCat,
-                    desc: source.d,
+                    icon: source.icon || "profile.jpg",
+                    shortDesc: source.shortDesc,
+                    overview: source.overview,
+                    features: source.features,
                     link: officialLink
                 });
             }
@@ -573,7 +1245,7 @@
 
             const items = generatePageItems(currentPage, activeCategory, searchQuery);
 
-            items.forEach(item => {
+            items.forEach((item, index) => {
                 const card = document.createElement('div');
                 card.className = 'dir-card';
                 card.innerHTML = `
@@ -583,7 +1255,10 @@
                             <span class="badge badge-cat">${item.category}</span>
                         </div>
                         <h3>${item.name}</h3>
-                        <p>${item.desc}</p>
+                        <p>
+                            ${item.shortDesc}
+                            <button class="read-more-btn" onclick="showFullDetailView(${index})">read more...</button>
+                        </p>
                     </div>
                     <a href="${item.link}" class="download-btn" target="_blank" rel="noopener noreferrer">Official Download Link ↗</a>
                 `;
@@ -595,6 +1270,65 @@
             document.getElementById('pageNumberDisplay').innerText = `Page ${currentPage}`;
             
             document.getElementById('prevBtn').disabled = (currentPage === 1);
+        }
+
+        // Show Software Detail (Clears directory page view)
+        function showFullDetailView(index) {
+            const items = generatePageItems(currentPage, activeCategory, searchQuery);
+            const item = items[index];
+
+            // Hide Main Index View
+            document.getElementById('mainPageView').style.display = 'none';
+
+            // Populate Detail View Data
+            document.getElementById('detailTitle').innerText = item.name;
+            document.getElementById('detailCategory').innerText = item.category;
+
+            const platBadge = document.getElementById('detailPlatform');
+            platBadge.innerText = item.platform;
+            platBadge.className = `badge badge-${item.platform === 'Windows' ? 'win' : 'android'}`;
+
+            // Software Image / Icon
+            const imgEl = document.getElementById('detailImg');
+            imgEl.src = item.icon;
+            imgEl.onerror = function() {
+                this.src = "https://via.placeholder.com/100x100/1e293b/38bdf8?text=" + encodeURIComponent(item.name.charAt(0));
+            };
+
+            // Build Comprehensive Detail Content
+            let featureListHtml = '';
+            if (item.features && item.features.length > 0) {
+                featureListHtml = `
+                    <h4>Key Features & Architecture:</h4>
+                    <ul>
+                        ${item.features.map(f => `<li>${f}</li>`).join('')}
+                    </ul>
+                `;
+            }
+
+            const bodyHtml = `
+                <p style="margin-bottom: 16px;"><strong>Overview:</strong> ${item.overview || item.shortDesc}</p>
+                <p style="margin-bottom: 16px;">${item.shortDesc}</p>
+                ${featureListHtml}
+                <h4>Security & Authenticity Guarantee:</h4>
+                <p style="font-size: 14px; color: #94a3b8;">
+                    This software has been categorized and verified for digital integrity. To protect against malicious binaries, ransomware, or altered installers, always obtain applications through verified source repositories and official mirrors linked below.
+                </p>
+            `;
+
+            document.getElementById('detailBody').innerHTML = bodyHtml;
+            document.getElementById('detailDownloadBtn').href = item.link;
+
+            // Show Detail View & Scroll To Top
+            document.getElementById('detailPageView').style.display = 'block';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Back button returns to directory
+        function backToDirectory() {
+            document.getElementById('detailPageView').style.display = 'none';
+            document.getElementById('mainPageView').style.display = 'block';
+            window.scrollTo({ top: document.querySelector('.directory-header').offsetTop - 20, behavior: 'smooth' });
         }
 
         function changePage(step) {
@@ -622,7 +1356,7 @@
 
         renderPage();
 
-        // وزٹر کاؤنٹر
+        // Visitor Counter Simulation
         (function() {
             let baseVisits = 142;
             let localVisits = parseInt(localStorage.getItem('page_views') || "0");

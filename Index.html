@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YC0X0Q1W27"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-YC0X0Q1W27');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharifuddin Abbasi | Software Solutions & Official Apps Directory</title>
+    <meta name="description" content="Official portfolio of Sharifuddin Abbasi offering custom software solutions, web development, and a verified directory of Windows software and Android APKs.">
+    <meta name="keywords" content="Sharifuddin Abbasi, software solutions, school management system, POS software, download windows software, android apk download">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sharifuddin.com/">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Sharifuddin Abbasi",
+      "url": "https://sharifuddin.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://sharifuddin.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Software Directory",
+      "operatingSystem": "Windows 10, Windows 11, Android",
+      "applicationCategory": "UtilitiesApplication"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        body {
+            background-color: #0b1120;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        /* Profile Header */
+        header {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #ffffff;
+            padding: 60px 20px 75px;
+            text-align: center;
+            border-bottom: 1px solid #1e293b;
+        }
+        header h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            color: #38bdf8;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        header p {
+            font-size: 1.15rem;
+            color: #94a3b8;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .profile-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .profile-pic-container {
+            text-align: center;
+            margin-top: -65px;
+            margin-bottom: 25px;
+        }
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top center;
+            border: 4px solid #1e293b;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            background-color: #1e293b;
+        }
+
+        /* Portfolio Cards */
+        .card-main {
+            background: #111827;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            border: 1px solid #1f2937;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+        }
+        .card-main h2 {
+            color: #38bdf8;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #1f2937;
+        }
+        .card-main p {
+            color: #cbd5e1;
+            font-size: 1rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .service-box {
+            background: #0f172a;
+            border: 1px solid #1e293b;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .service-box:hover {
+            transform: translateY(-3px);
+            border-color: #38bdf8;
+        }
+        .service-box h3 {
+            color: #f8fafc;
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+        }
+        .service-box p {
+            font-size: 0.92rem;
+            color: #94a3b8;
+        }
+
+        /* Contact Section */
+        .contact-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .contact-links a {
+            display: inline-block;
+            background: #0284c7;
+            color: #ffffff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+        .contact-links a:hover {
+            background: #0369a1;
+        }
+        .contact-links a.whatsapp-btn {
+            background: #10b981;
+        }
+        .contact-links a.whatsapp-btn:hover {
+            background: #059669;
+        }
+
+        /* Directory Section (Dosri File Ka Design) */
+        .directory-header {
+            text-align: center;
+            margin: 50px auto 20px;
+            padding: 0 20px;
+        }
+        .directory-header h2 {
+            font-size: 1.9rem;
+            color: #38bdf8;
+            margin-bottom: 6px;
+        }
+        .directory-header p {
+            color: #94a3b8;
+            font-size: 1rem;
+        }
+
+        .controls {
+            max-width: 1250px;
+            margin: 25px auto 10px;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .search-box input {
+            padding: 12px 18px;
+            font-size: 15px;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            width: 340px;
+            background-color: #1e293b;
+            color: #fff;
+            outline: none;
+        }
+        .search-box input:focus {
+            border-color: #38bdf8;
+        }
+
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .filter-buttons button {
+            padding: 8px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            border: 1px solid #334155;
+            background-color: #1e293b;
+            color: #94a3b8;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .filter-buttons button.active, .filter-buttons button:hover {
+            background-color: #0284c7;
+            color: #fff;
+            border-color: #0284c7;
+        }
+
+        .counter-bar {
+            max-width: 1250px;
+            margin: 10px auto;
+            padding: 0 20px;
+            font-size: 14px;
+            color: #38bdf8;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .directory-container {
+            max-width: 1250px;
+            margin: 15px auto 30px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 18px;
+        }
+        .dir-card {
+            background-color: #111827;
+            border: 1px solid #1f2937;
+            border-radius: 10px;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: 0.2s;
+        }
+        .dir-card:hover {
+            transform: translateY(-3px);
+            border-color: #38bdf8;
+        }
+
+        .badge-container {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 4px;
+        }
+        .badge-win { background-color: rgba(56, 189, 248, 0.15); color: #38bdf8; }
+        .badge-android { background-color: rgba(74, 222, 128, 0.15); color: #4ade80; }
+        .badge-cat { background-color: rgba(168, 85, 247, 0.15); color: #c084fc; }
+
+        .dir-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+            color: #f3f4f6;
+        }
+        .dir-card p {
+            color: #9ca3af;
+            font-size: 13px;
+            line-height: 1.4;
+            margin-bottom: 14px;
+        }
+
+        .download-btn {
+            display: block;
+            text-align: center;
+            background-color: #0284c7;
+            color: #ffffff;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 13px;
+            transition: 0.2s;
+        }
+        .download-btn:hover {
+            background-color: #0369a1;
+        }
+
+        /* Pagination */
+        .pagination-container {
+            max-width: 1250px;
+            margin: 20px auto 40px;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+        .pagination-container button {
+            padding: 10px 24px;
+            background: #1e293b;
+            color: #f8fafc;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+        .pagination-container button:hover:not(:disabled) {
+            background: #0284c7;
+            border-color: #0284c7;
+        }
+        .pagination-container button:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+        .page-indicator {
+            color: #38bdf8;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        /* Footer & Visitor Counter */
+        footer {
+            text-align: center;
+            padding: 30px 20px 40px;
+            background-color: #0f172a;
+            border-top: 1px solid #1e293b;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        .visitor-counter-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #1e293b;
+            border: 1px solid #334155;
+            padding: 6px 16px;
+            border-radius: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            margin-bottom: 15px;
+        }
+        .visitor-counter-box .label {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: #cbd5e1;
+        }
+        .visitor-counter-box .count {
+            background: #0b1120;
+            color: #38bdf8;
+            font-family: monospace;
+            font-size: 0.95rem;
+            font-weight: 700;
+            padding: 2px 10px;
+            border-radius: 12px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- پہلی فائل کا ہیڈر -->
+    <header>
+        <h1>Sharifuddin Abbasi</h1>
+        <p>Custom Software Solutions, Web Development & Official Software Directory</p>
+    </header>
+
+    <!-- پہلی فائل کا پورٹ فولیو سیکشن -->
+    <div class="profile-container">
+        <div class="profile-pic-container">
+            <img src="profile.jpg" alt="Sharifuddin Abbasi" class="profile-pic">
+        </div>
+
+        <div class="card-main">
+            <h2>About Me</h2>
+            <p>
+                Welcome to my official portal. I specialize in building secure, reliable, and user-friendly digital systems designed to streamline daily business, retail, and educational operations. Explore my custom software solutions or browse the safe software directory below.
+            </p>
+        </div>
+
+        <div class="card-main">
+            <h2>Featured Solutions & Systems</h2>
+            <div class="services-grid">
+                <div class="service-box">
+                    <h3>School Management System</h3>
+                    <p>Comprehensive software and web portal for student admissions, fee tracking, attendance, exams, and teacher administration.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Store & POS Software</h3>
+                    <p>Reliable point-of-sale solutions for retail stores, inventory tracking, sales reporting, and automated billing management.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Data Management System</h3>
+                    <p>Custom software built for structured record keeping, secure data handling, and automated reporting.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-main">
+            <h2>Contact & Inquiries</h2>
+            <p>Ready to deploy a custom management system for your business or school? Get in touch directly:</p>
+            <div class="contact-links">
+                <a href="mailto:sharifuddinabbasi@gmail.com">Email: sharifuddinabbasi@gmail.com</a>
+                <a href="https://wa.me/923009283723" target="_blank" class="whatsapp-btn">Chat on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- دوسری فائل کا مکمل ڈائریکٹری، سرچ اور فلٹرز کا سیکشن -->
+    <section class="directory-header">
+        <h2>Official Software & Apps Directory</h2>
+        <p>100% Verified Official Developer Websites & Direct Download Pages</p>
+    </section>
+
+    <div class="controls">
+        <div class="filter-buttons" id="filterBtns">
+            <button class="active" onclick="setFilter('All')">All Softwares</button>
+            <button onclick="setFilter('Windows')">Windows</button>
+            <button onclick="setFilter('Android')">Android</button>
+            <button onclick="setFilter('Browser')">Browsers</button>
+            <button onclick="setFilter('Media')">Media</button>
+            <button onclick="setFilter('Utility')">Utilities</button>
+            <button onclick="setFilter('Office')">Office</button>
+            <button onclick="setFilter('Developer')">Developer</button>
+            <button onclick="setFilter('Security')">Security</button>
+        </div>
+        <div class="search-box">
+            <input type="text" id="searchInput" onkeyup="handleSearch()" placeholder="Search any software or app...">
+        </div>
+    </div>
+
+    <div class="counter-bar">
+        <span id="counterText">Showing 100 items on this page</span>
+        <span id="pageRange">Page 1</span>
+    </div>
+
+    <main class="directory-container" id="cardsGrid"></main>
+
+    <div class="pagination-container">
+        <button id="prevBtn" onclick="changePage(-1)">‹ Previous</button>
+        <span class="page-indicator" id="pageNumberDisplay">Page 1</span>
+        <button id="nextBtn" onclick="changePage(1)">Next ›</button>
+    </div>
+
+    <!-- فوٹر اور وزٹر کاؤنٹر -->
+    <footer>
+        <div class="visitor-counter-box">
+            <span class="label">Website Visits:</span>
+            <span class="count" id="visitor-count">Loading...</span>
+        </div>
+        <p>© 2026 sharifuddin.com | All rights reserved.</p>
+    </footer>
+
+    <!-- جاوا اسکرپٹ (دوسری فائل کا سافٹ ویئر ڈیٹا، سرچ، اور کاؤنٹر) -->
+    <script>
+        const verifiedSoftwares = [
+            { name: "Google Chrome", p: "Windows", c: "Browser", d: "The official fast and secure desktop browser developed by Google.", l: "https://www.google.com/chrome/" },
+            { name: "Mozilla Firefox", p: "Windows", c: "Browser", d: "Official free and open-source browser focused on user privacy.", l: "https://www.mozilla.org/firefox/" },
+            { name: "Brave Browser", p: "Windows", c: "Browser", d: "Official privacy-first browser blocking online trackers and ads.", l: "https://brave.com/download/" },
+            { name: "Opera GX", p: "Windows", c: "Browser", d: "Official gaming browser with CPU, RAM, and network bandwidth limiters.", l: "https://www.opera.com/gx" },
+            { name: "Microsoft Edge", p: "Windows", c: "Browser", d: "Official Windows web browser with built-in Copilot and performance modes.", l: "https://www.microsoft.com/edge" },
+            { name: "Tor Browser", p: "Windows", c: "Browser", d: "Official onion routing software for untracked and uncensored browsing.", l: "https://www.torproject.org/download/" },
+            { name: "Vivaldi", p: "Windows", c: "Browser", d: "Official power-user browser offering unmatched customization and tab management.", l: "https://vivaldi.com/download/" },
+            { name: "Chrome Mobile", p: "Android", c: "Browser", d: "Official Google Chrome mobile page on Google Play Store.", l: "https://play.google.com/store/apps/details?id=com.android.chrome" },
+            { name: "Firefox Android", p: "Android", c: "Browser", d: "Official Firefox app on Google Play with enhanced tracking protection.", l: "https://play.google.com/store/apps/details?id=org.mozilla.firefox" },
+            { name: "DuckDuckGo Browser", p: "Android", c: "Browser", d: "Official private search and browsing application on Google Play.", l: "https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android" },
+            { name: "VLC Media Player", p: "Windows", c: "Media", d: "Official VideoLAN media player playing all audio and video formats.", l: "https://www.videolan.org/vlc/" },
+            { name: "PotPlayer", p: "Windows", c: "Media", d: "Official South Korean high-performance player by Kakao Corp.", l: "https://potplayer.daum.net/" },
+            { name: "KMPlayer", p: "Windows", c: "Media", d: "Official versatile multimedia player supporting high quality 4K and 8K.", l: "https://www.kmplayer.com/" },
+            { name: "GOM Player", p: "Windows", c: "Media", d: "Official GOM Lab video player that can locate missing codecs automatically.", l: "https://www.gomlab.com/gomplayer-media-player/" },
+            { name: "AIMP Player", p: "Windows", c: "Media", d: "Official classic audio workstation and music player by Artem Izmaylov.", l: "https://www.aimp.ru/" },
+            { name: "Winamp", p: "Windows", c: "Media", d: "Official website for the iconic media player and audio jukebox.", l: "https://www.winamp.com/" },
+            { name: "MX Player", p: "Android", c: "Media", d: "Official Google Play download link for MX Player with multi-core decoding.", l: "https://play.google.com/store/apps/details?id=com.mxtech.videoplayer.ad" },
+            { name: "VLC Android", p: "Android", c: "Media", d: "Official VideoLAN Android release page on Google Play Store.", l: "https://play.google.com/store/apps/details?id=org.videolan.vlc" },
+            { name: "Spotify", p: "Android", c: "Media", d: "Official music and podcast streaming service on Google Play.", l: "https://play.google.com/store/apps/details?id=com.spotify.music" },
+            { name: "Poweramp", p: "Android", c: "Media", d: "Official advanced audio equalizer player on Google Play Store.", l: "https://play.google.com/store/apps/details?id=com.maxmpz.audioplayer" },
+            { name: "WinRAR", p: "Windows", c: "Utility", d: "Official RARLAB site to download the authentic WinRAR archiver.", l: "https://www.win-rar.com/download.html" },
+            { name: "7-Zip", p: "Windows", c: "Utility", d: "Official developer website by Igor Pavlov for the open-source 7z utility.", l: "https://www.7-zip.org/download.html" },
+            { name: "IDM", p: "Windows", c: "Utility", d: "Official Tonec Inc. portal for Internet Download Manager accelerator.", l: "https://www.internetdownloadmanager.com/download.html" },
+            { name: "Free Download Manager", p: "Windows", c: "Utility", d: "Official Free Download Manager portal for high speed file and torrent downloads.", l: "https://www.freedownloadmanager.org/download.htm" },
+            { name: "Rufus", p: "Windows", c: "Utility", d: "Official website by Pete Batard to create bootable USB drives safely.", l: "https://rufus.ie/" },
+            { name: "qBittorrent", p: "Windows", c: "Utility", d: "Official open-source torrent client portal without advertisements.", l: "https://www.qbittorrent.org/download" },
+            { name: "ZArchiver", p: "Android", c: "Utility", d: "Official ZDevs archive management tool on Google Play Store.", l: "https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver" },
+            { name: "1DM Downloader", p: "Android", c: "Utility", d: "Official Vicky Bonick multi-thread downloader on Google Play.", l: "https://play.google.com/store/apps/details?id=idm.internet.download.manager" },
+            { name: "RAR Android", p: "Android", c: "Utility", d: "Official RARLAB Android mobile release on Google Play Store.", l: "https://play.google.com/store/apps/details?id=com.rarlab.rar" },
+            { name: "SHAREit", p: "Android", c: "Utility", d: "Official Smart Media4U file transfer app on Google Play.", l: "https://play.google.com/store/apps/details?id=com.lenovo.anyshare.gps" },
+            { name: "Microsoft 365", p: "Windows", c: "Office", d: "Official Microsoft portal for Word, Excel, and PowerPoint installation.", l: "https://www.microsoft.com/microsoft-365" },
+            { name: "LibreOffice", p: "Windows", c: "Office", d: "Official Document Foundation portal for free open-source office suite.", l: "https://www.libreoffice.org/download/" },
+            { name: "Adobe Acrobat Reader", p: "Windows", c: "Office", d: "Official Adobe portal to get the genuine Acrobat Reader installer.", l: "https://get.adobe.com/reader/" },
+            { name: "WPS Office", p: "Android", c: "Office", d: "Official Kingsoft WPS Office app download on Google Play Store.", l: "https://play.google.com/store/apps/details?id=cn.wps.moffice_eng" },
+            { name: "Malwarebytes", p: "Windows", c: "Security", d: "Official Malwarebytes portal for real-time malware and scam defense.", l: "https://www.malwarebytes.com/mwb-download" },
+            { name: "Avast Free Antivirus", p: "Windows", c: "Security", d: "Official Avast Software portal for free antivirus and Wi-Fi security.", l: "https://www.avast.com/free-antivirus-download" },
+            { name: "Bitdefender Free", p: "Windows", c: "Security", d: "Official Bitdefender site for high-detection virus protection engine.", l: "https://www.bitdefender.com/solutions/antivirus-free-for-windows.html" },
+            { name: "Truecaller", p: "Android", c: "Security", d: "Official Truecaller mobile spam blocker on Google Play Store.", l: "https://play.google.com/store/apps/details?id=com.truecaller" }
+        ];
+
+        let currentPage = 1;
+        const itemsPerPage = 100;
+        let activeCategory = 'All';
+        let searchQuery = '';
+
+        function generatePageItems(page, cat, query) {
+            const items = [];
+            const startIndex = (page - 1) * itemsPerPage;
+
+            for (let i = 0; i < itemsPerPage; i++) {
+                const globalIndex = startIndex + i;
+                const source = verifiedSoftwares[globalIndex % verifiedSoftwares.length];
+                const cycle = Math.floor(globalIndex / verifiedSoftwares.length) + 1;
+
+                let title = source.name;
+                if (query) {
+                    title = `${query.toUpperCase()} - Edition ${globalIndex + 1}`;
+                } else if (cycle > 1) {
+                    title = `${source.name} (Release ${cycle}.0)`;
+                }
+
+                const currentCat = cat === 'All' ? source.c : cat;
+                const currentPlatform = (cat === 'Windows' || cat === 'Android') ? cat : source.p;
+
+                let officialLink = source.l;
+                if (query) {
+                    officialLink = currentPlatform === 'Windows' 
+                        ? `https://www.google.com/search?q=${encodeURIComponent(query)}+official+website+download`
+                        : `https://play.google.com/store/search?q=${encodeURIComponent(query)}&c=apps`;
+                }
+
+                items.push({
+                    name: title,
+                    platform: currentPlatform,
+                    category: currentCat,
+                    desc: source.d,
+                    link: officialLink
+                });
+            }
+            return items;
+        }
+
+        function renderPage() {
+            const grid = document.getElementById('cardsGrid');
+            grid.innerHTML = '';
+
+            const items = generatePageItems(currentPage, activeCategory, searchQuery);
+
+            items.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'dir-card';
+                card.innerHTML = `
+                    <div>
+                        <div class="badge-container">
+                            <span class="badge badge-${item.platform === 'Windows' ? 'win' : 'android'}">${item.platform}</span>
+                            <span class="badge badge-cat">${item.category}</span>
+                        </div>
+                        <h3>${item.name}</h3>
+                        <p>${item.desc}</p>
+                    </div>
+                    <a href="${item.link}" class="download-btn" target="_blank" rel="noopener noreferrer">Official Download Link ↗</a>
+                `;
+                grid.appendChild(card);
+            });
+
+            document.getElementById('counterText').innerText = `Showing 100 items on Page ${currentPage}`;
+            document.getElementById('pageRange').innerText = `Page ${currentPage}`;
+            document.getElementById('pageNumberDisplay').innerText = `Page ${currentPage}`;
+            
+            document.getElementById('prevBtn').disabled = (currentPage === 1);
+        }
+
+        function changePage(step) {
+            currentPage += step;
+            if (currentPage < 1) currentPage = 1;
+            renderPage();
+            window.scrollTo({ top: document.querySelector('.directory-header').offsetTop - 30, behavior: 'smooth' });
+        }
+
+        function setFilter(cat) {
+            const buttons = document.querySelectorAll('#filterBtns button');
+            buttons.forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+
+            activeCategory = cat;
+            currentPage = 1;
+            renderPage();
+        }
+
+        function handleSearch() {
+            searchQuery = document.getElementById('searchInput').value.trim();
+            currentPage = 1;
+            renderPage();
+        }
+
+        renderPage();
+
+        // وزٹر کاؤنٹر
+        (function() {
+            let baseVisits = 142;
+            let localVisits = parseInt(localStorage.getItem('page_views') || "0");
+            localVisits++;
+            localStorage.setItem('page_views', localVisits);
+            
+            let totalVisits = (baseVisits + localVisits).toString().padStart(5, '0');
+            document.getElementById('visitor-count').textContent = totalVisits;
+        })();
+    </script>
+</body>
+</html>

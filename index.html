@@ -121,9 +121,28 @@
         .contact-links a.whatsapp-btn:hover {
             background: #1ebc59;
         }
+        .visitor-counter-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            padding: 8px 16px;
+            border-radius: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            margin-bottom: 15px;
+        }
+        .visitor-counter-box span {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #475569;
+        }
+        .visitor-counter-box img {
+            vertical-align: middle;
+        }
         footer {
             text-align: center;
-            padding: 40px 20px;
+            padding: 30px 20px 40px;
             color: #94a3b8;
             font-size: 0.9rem;
         }
@@ -181,6 +200,11 @@
     </div>
 
     <footer>
+        <!-- Live Visitor Counter -->
+        <div class="visitor-counter-box">
+            <span>Website Visits:</span>
+            <img src="https://hitscounter.dev/badge?page_id=sharifuddinabbasi_website_counter" alt="Visitor Counter">
+        </div>
         <p>© 2026 sharifuddin.com | All rights reserved.</p>
     </footer>
 

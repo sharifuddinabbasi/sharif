@@ -14,32 +14,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sharifuddin Abbasi | Software Solutions & Official Apps Directory</title>
-    <meta name="description" content="Official portfolio of Sharifuddin Abbasi offering custom software solutions, web development, and an authentic verified directory of Windows software and Android APKs.">
-    <meta name="keywords" content="Sharifuddin Abbasi, software solutions, school management system, POS software, download windows software, android apk download">
-    <meta name="robots" content="index, follow">
+    <meta name="description" content="Official portfolio of Sharifuddin Abbasi offering custom software solutions, School Management Systems, POS billing software, and verified safe direct software downloads.">
+    <meta name="keywords" content="Sharifuddin Abbasi, software solutions, school management system, POS software, data management system, verified windows software, safe android apk download, software developer">
+    <meta name="author" content="Sharifuddin Abbasi">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://sharifuddin.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sharifuddin.com/">
+    <meta property="og:title" content="Sharifuddin Abbasi | Software Solutions & Official Apps Directory">
+    <meta property="og:description" content="Custom software solutions, web development, school management systems, POS software, and verified software directory.">
+    <meta property="og:image" content="https://sharifuddin.com/profile.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://sharifuddin.com/">
+    <meta name="twitter:title" content="Sharifuddin Abbasi | Software Solutions & Official Apps Directory">
+    <meta name="twitter:description" content="Custom software solutions, web development, school management systems, POS software, and verified software directory.">
+    <meta name="twitter:image" content="https://sharifuddin.com/profile.jpg">
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Sharifuddin Abbasi",
-      "url": "https://sharifuddin.com/",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://sharifuddin.com/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Software Directory",
-      "operatingSystem": "Windows 10, Windows 11, Android",
-      "applicationCategory": "UtilitiesApplication"
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://sharifuddin.com/#person",
+          "name": "Sharifuddin Abbasi",
+          "url": "https://sharifuddin.com/",
+          "image": "https://sharifuddin.com/profile.jpg",
+          "jobTitle": "Software Developer & IT Consultant",
+          "description": "Developer specializing in custom management systems, POS solutions, School Management Software, and Web Applications.",
+          "sameAs": [
+            "https://wa.me/923009283723"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://sharifuddin.com/#website",
+          "url": "https://sharifuddin.com/",
+          "name": "Sharifuddin Abbasi",
+          "publisher": {
+            "@id": "https://sharifuddin.com/#person"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://sharifuddin.com/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Software Directory",
+          "operatingSystem": "Windows 10, Windows 11, Android",
+          "applicationCategory": "UtilitiesApplication"
+        }
+      ]
     }
     </script>
 
@@ -509,7 +541,7 @@
 
         <div class="profile-container">
             <div class="profile-pic-container">
-                <img src="profile.jpg" alt="Sharifuddin Abbasi" class="profile-pic">
+                <img src="profile.jpg" alt="Sharifuddin Abbasi - Software Developer & IT Solutions" class="profile-pic" width="130" height="130">
             </div>
 
             <div class="card-main">
@@ -542,7 +574,7 @@
                 <p>Ready to deploy a custom management system for your business or school? Get in touch directly:</p>
                 <div class="contact-links">
                     <a href="mailto:sharifuddinabbasi@gmail.com">Email: sharifuddinabbasi@gmail.com</a>
-                    <a href="https://wa.me/923009283723" target="_blank" class="whatsapp-btn">Chat on WhatsApp</a>
+                    <a href="https://wa.me/923009283723" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">Chat on WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -590,7 +622,7 @@
         
         <div class="detail-card">
             <div class="detail-header-flex">
-                <img id="detailImg" src="" alt="Software Logo" class="soft-img">
+                <img id="detailImg" src="" alt="Software Logo" class="soft-img" width="100" height="100">
                 <div class="detail-titles">
                     <div class="badge-container">
                         <span class="badge" id="detailPlatform">Platform</span>
@@ -1272,15 +1304,12 @@
             document.getElementById('prevBtn').disabled = (currentPage === 1);
         }
 
-        // Show Software Detail (Clears directory page view)
         function showFullDetailView(index) {
             const items = generatePageItems(currentPage, activeCategory, searchQuery);
             const item = items[index];
 
-            // Hide Main Index View
             document.getElementById('mainPageView').style.display = 'none';
 
-            // Populate Detail View Data
             document.getElementById('detailTitle').innerText = item.name;
             document.getElementById('detailCategory').innerText = item.category;
 
@@ -1288,14 +1317,12 @@
             platBadge.innerText = item.platform;
             platBadge.className = `badge badge-${item.platform === 'Windows' ? 'win' : 'android'}`;
 
-            // Software Image / Icon
             const imgEl = document.getElementById('detailImg');
             imgEl.src = item.icon;
             imgEl.onerror = function() {
                 this.src = "https://via.placeholder.com/100x100/1e293b/38bdf8?text=" + encodeURIComponent(item.name.charAt(0));
             };
 
-            // Build Comprehensive Detail Content
             let featureListHtml = '';
             if (item.features && item.features.length > 0) {
                 featureListHtml = `
@@ -1319,12 +1346,10 @@
             document.getElementById('detailBody').innerHTML = bodyHtml;
             document.getElementById('detailDownloadBtn').href = item.link;
 
-            // Show Detail View & Scroll To Top
             document.getElementById('detailPageView').style.display = 'block';
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Back button returns to directory
         function backToDirectory() {
             document.getElementById('detailPageView').style.display = 'none';
             document.getElementById('mainPageView').style.display = 'block';

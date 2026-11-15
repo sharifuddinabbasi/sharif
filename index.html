@@ -775,7 +775,7 @@
         <p>© 2026 sharifuddin.com | All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript Smart Dynamic Generator for Millions of Softwares & Instant Custom Search -->
+    <!-- JavaScript Smart Dynamic Generator for Millions of Softwares & Clean Exact Search -->
     <script>
         const coreSoftwares = [
             { name: "Google Chrome", p: "Windows", c: "Browser", icon: "https://www.google.com/chrome/static/images/chrome-logo.svg", l: "https://www.google.com/chrome/", desc: "World's most popular web browser built for speed, simplicity, and stability." },
@@ -806,19 +806,18 @@
         ];
 
         let verifiedSoftwares = [...coreSoftwares];
-        const prefixes = ["Pro", "Ultimate", "Master", "Prime", "Elite", "Advanced", "Super", "Turbo", "Max", "Global", "Next", "Cloud", "Secure", "Smart", "Infinite", "Mega", "Ultra", "Hyper", "Legend", "Epic", "Mobile", "Desktop", "Cloud", "Cyber", "Nexus"];
+        const prefixes = ["Pro", "Ultimate", "Master", "Prime", "Elite", "Advanced", "Super", "Turbo", "Max", "Global", "Next", "Cloud", "Secure", "Smart", "Infinite", "Mega", "Ultra", "Hyper", "Legend", "Epic", "Mobile", "Desktop", "Cyber", "Nexus"];
         const suffixes = ["Studio", "Toolkit", "Manager", "Assistant", "Optimizer", "Engine", "Guard", "Hub", "Reader", "Editor", "Player", "Builder", "Scanner", "Client", "System", "Simulator", "Quest", "Adventure", "Battle", "Racing", "Legends", "Saga", "World", "Tactics", "Craft", "Defense", "Wars", "Arena"];
         const platforms = ["Windows", "Android"];
         const categories = ["Browser", "Media", "Utility", "Office", "Developer", "Security"];
 
-        // Massively expanded generator to ensure thousands of Android & Windows apps/games in every category
         let counter = 1;
         platforms.forEach(plat => {
             categories.forEach(cat => {
                 prefixes.forEach(pre => {
                     suffixes.forEach(suf => {
                         verifiedSoftwares.push({
-                            name: `${pre} ${cat} ${suf} ${counter}`,
+                            name: `${pre} ${cat} ${suf}`,
                             p: plat,
                             c: cat,
                             icon: "https://sharifuddin.com/profile.jpg",
@@ -846,18 +845,16 @@
                 return matchesCategory && matchesSearch;
             });
 
-            if (query !== '' && results.length < 30) {
-                for (let i = 1; i <= 100; i++) {
-                    const customTitle = i === 1 ? `${searchQuery.charAt(0).toUpperCase() + searchQuery.slice(1)} Official App` : `${searchQuery.charAt(0).toUpperCase() + searchQuery.slice(1)} Edition ${i}`;
-                    results.unshift({
-                        name: customTitle,
-                        p: i % 2 === 0 ? "Windows" : "Android",
-                        c: i % 3 === 0 ? "Media" : (i % 2 === 0 ? "Utility" : "Developer"),
-                        icon: "https://sharifuddin.com/profile.jpg",
-                        l: `https://www.google.com/search?q=${encodeURIComponent(searchQuery + ' official website download')}`,
-                        desc: `Verified official software, mobile application and gaming package matching query "${searchQuery}". Secure direct high-speed download mirror.`
-                    });
-                }
+            if (query !== '' && results.length < 10) {
+                const cleanQuery = searchQuery.charAt(0).toUpperCase() + searchQuery.slice(1);
+                results.unshift({
+                    name: `${cleanQuery} Official App`,
+                    p: "Windows",
+                    c: "Utility",
+                    icon: "https://sharifuddin.com/profile.jpg",
+                    l: `https://www.google.com/search?q=${encodeURIComponent(searchQuery + ' official website download')}`,
+                    desc: `Verified official software and digital application matching query "${searchQuery}". Secure direct high-speed download mirror.`
+                });
             }
 
             if (results.length === 0) {
